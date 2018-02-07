@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+
+</head>
+<body>
+  <h1>when done</h1>
+  <div class="log"></div>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+
+$.when(
+$.getScript( "https://code.jquery.com/ui/1.12.1/jquery-ui.js" ).done(function() {$( "div.log" ).append( "<div>jquery-ui</div>" );}),
+$.getScript( "https://ajax.googleapis.com/ajax/libs/mootools/1.5.0/mootools-yui-compressed.js" ).done(function() {$( "div.log" ).append( "<div>mootools</div>" );}),
+$.getScript( "https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" ).done(function() {$( "div.log" ).append( "<div>bootstrap</div>" );}),
+$.getScript( 'https://code.jquery.com/color/jquery.color.js').done(function() {$( "div.log" ).append( "<div>jquery.color</div>" );}),
+$.getScript( 'https://da7xgjtj801h2.cloudfront.net/2015.2.624/js/kendo.ui.core.min.js').done(function() {$( "div.log" ).append( "<div>kendo</div>" );}),
+$.getScript( 'https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js').done(function() {$( "div.log" ).append( "<div>zepto</div>" );}),
+$.getScript( 'https://unpkg.com/react@0.13.3/dist/react.js').done(function() {$( "div.log" ).append( "<div>react</div>" );}),
+$.getScript( 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js').done(function() {$( "div.log" ).append( "<div>vue</div>" );}),
+$.getScript( 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js').done(function() {$( "div.log" ).append( "<div>underscore</div>" );}),
+$.getScript( 'https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js').done(function() {$( "div.log" ).append( "<div>backbone</div>" );}),
+$.getScript( 'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js').done(function() {$( "div.log" ).append( "<div>angular</div>" );}),
+).done(function(a){
+  $( "div.log" ).append( "<div>all are loaded</div>" );
+});
+</script>
+</body>
+</html>
